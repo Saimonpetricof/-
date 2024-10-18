@@ -1,5 +1,5 @@
 import pandas as pd
-
+import numpy as np
 def num_distinct(df: pd.DataFrame) -> int:
     """
     Подсчитайте количество уникальных значений в столбце `product`.
@@ -13,5 +13,4 @@ def num_distinct(df: pd.DataFrame) -> int:
     
     нужно вернуть 2.
     """
-
-    return
+    return len(df.product.unique()[~np.isnan(df.product.unique())])
