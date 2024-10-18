@@ -14,5 +14,4 @@ def count_rows(df: pd.DataFrame) -> int:
     нужно вернуть 3.
     """
     
-
     return np.shape(df)[0]
