@@ -12,5 +12,7 @@ def num_distinct(df: pd.DataFrame) -> int:
     102   apple
     
     нужно вернуть 2.
+
     """
-    return len(df.product.unique()[~np.isnan(df.product.unique())])
+    dfn = df['product'].fillna(pd.NA).dropna()
+    return len(np.unique(dfn.to_numpy()))
