@@ -1,5 +1,5 @@
 import pandas as pd
-
+import numpy as np
 def count_rows(df: pd.DataFrame) -> int:
     """
     Подсчитайте количество строк в датафрейме.
@@ -13,5 +13,6 @@ def count_rows(df: pd.DataFrame) -> int:
     
     нужно вернуть 3.
     """
+    
 
-    return 
+    return np.shape(df)[0]
