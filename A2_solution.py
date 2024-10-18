@@ -18,6 +18,6 @@ def num_distinct(df: pd.DataFrame) -> int:
 
 #   print(num_distinct(pd.DataFrame({"id": [1,2,100], "product":[np.nan,1,np.nan]})))
 
-    return df["product"].isna().sum()
+    return df["product"].fillna(pd.NA).isna().sum()
 
 
