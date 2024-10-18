@@ -10,4 +10,4 @@ def test1(num_distinct):
 							pd.DataFrame({"id": [1,2,100], "product":[np.nan,1,np.nan]})]
 		
 		for index, ans in enumerate(Ans):
-				assert (Solution(Problem[index])) == ans
+				assert (num_distinct(Problem[index])) == ans
